@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://lh3.googleusercontent.com/proxy/grK3V--lzIPkIv4n3W_Khrb2BoUj_vAt1E3_exTtrNO-sMu4DpoXclpwtcT9iM_-aggtRQK_wvb9XCiDpKyv3_y3_j00d2JnN0HaZnT0Mjb68ye_XuBu3d8xtzcZeGTt1TIuQmpoRhP5ZEiKXg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border: 5px solid black;
+  padding: 1rem;
+  background: linear-gradient(229deg, #a2ffe7, #eca2ff, #a2cfff, #f6ffa2, #ffb2a2, #c1ffa2);
+  background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  font-family: 'Bungee Shade', cursive;
+}
+#weapons{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 73%}
+  50%{background-position:100% 28%}
+  100%{background-position:0% 73%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 73%}
+  50%{background-position:100% 28%}
+  100%{background-position:0% 73%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 73%}
+  50%{background-position:100% 28%}
+  100%{background-position:0% 73%}
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 3rem;
+}
+img{
+  height:200px;
+  width: 200px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  padding: 0.75rem;
+  margin: 1rem;
+  border-radius: 15px;
+  font-size: 1.75rem;
+  border:10px solid crimson;
+  color: #ef233c;
+  outline: none;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+  background-color: black;
+}
+
+button:hover{
+  border: 10px solid yellow;
+}
+span{
+  font-size: 2.2rem;
+  font-family: 'Bungee', cursive;
+}
+#weapons span{
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+#score{
+  font-size: 2.2rem;
+  font-family: 'Bungee', cursive;
+}
+#num{
+  color: yellow;
+  text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+             #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
+}
+#botNum{
+  text-shadow: #ff0 0px 0px 5px,   #ff0 0px 0px 5px,   #ff0 0px 0px 5px,
+             #ff0 0px 0px 5px,   #ff0 0px 0px 5px,   #ff0 0px 0px 5px;
+}
+#msg{
+    font-size: 2rem;
+    color: yellow;
+    font-family: 'Bungee', cursive;
+    text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+               #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
+  }
